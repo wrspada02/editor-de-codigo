@@ -1,0 +1,54 @@
+
+    :root{
+        --corAzulEscuroBackgroundPagina: #051D3B;
+        --corAzulClaroBackgroundAbaixoEditorDeCodigo: #6BD1FF;
+        --corPretoBackgroundAcimaEditorDeCodigo: #141414;
+        --corIconeEditorDeTexto: #5081FB;
+        --corIconeComunidade: rgba(80, 129, 251, 0.08);;
+        --corBrancoFonte: #FFF;
+        --corBrancoFontePlaceholder: rgb(192, 182, 182);
+        --corAzulBotaoHighlight: rgba(80, 129, 251, 0.08);
+        --corAzulBotaoSalvarProjeto: #5081FB;
+        --corBackgroundInput: rgba(255, 255, 255, 0.16);
+        --corBrancoBorda: #FFF;
+        --corPretoFonte: #000;
+        --corHoverIconeEditorDeTexto: #96B9FD;
+        --corHoverIconeComunidade: #7BA4FC;
+        --corHoverElementoInput: rgba(255, 255, 255, 0.24);
+        --corHoverBotaoHighlight: rgba(80, 129, 251, 0.16);
+        --corHoverBotaoSalvarProjeto: #7BA4FC;
+        --corHoverElementoNavegacao: #5081FB;
+        --corHoverElementoComum: rgba(80, 129, 251, 0.08);;
+
+        --inter: 'Inter', sans-serif;
+        --robotoMono: 'Roboto', sans-serif;
+    }
+
+    body{
+        background-color: var(--corAzulEscuroBackgroundPagina);
+        width: 100vw;
+    }
+
+    .container{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .botao{
+        text-align: center;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem 2rem; 
+        border-radius: 5px;
+        border: none;
+
+        font-family: var(--inter);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+
+
+    

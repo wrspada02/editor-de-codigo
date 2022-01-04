@@ -1,0 +1,98 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0"><!-- TAG para deixar o layout responsivo -->
+            <title>Alura DEV | Editor de código</title>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
+            </style>
+            <link rel="stylesheet" href="css/reset.css">
+            <link rel="stylesheet" href="css/dark.css">
+            <link rel="stylesheet" href="css/base.css">
+            <link rel="stylesheet" href="css/cabecalho.css">
+            <link rel="stylesheet" href="css/conteudoPrincipal.css">
+            <link rel="stylesheet" href="css/editorDeTextoStyle.css">
+            <link rel="stylesheet" href="css/conteudoFormulario.css">
+            <link rel="stylesheet" href="css/formularioStyle.css">
+        </head>
+
+        <body>
+            <header class="cabecalho container">
+                    <ul class="conteudoCabecalhoMobile">
+                        <li><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
+                        <div class="itensListaMobile">
+                        <li class="itensFilhosLista"><img src="img/Pesquisa.png" alt="Lupa de pesquisa"></li>
+                        <li class="itensFilhosLista"><img src="img/Menu.png" alt="Barra de detalhes"></li>
+                        </div>
+                    </ul>
+
+                    <ul class="conteudoCabecalhoTablet">
+                        <li class="imagemLogoCabecalho"><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
+                        <li class="barraDePesquisa"><input type="search" placeholder="Busque por algo"></li>
+                        <li class="menuAutor"><img src="img/Menu.png" alt="Barra de detalhes"></li>
+                    </ul>
+                    
+                    <ul class="conteudoCabecalhoDesktop">
+                        <li class="logoCabecalhoDesktop"><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
+                        <li class="barraDePesquisa"><input type="search" placeholder="Busque por algo"></li>
+                        <li class="conteudoCabecalhoDesktopInline">
+                            <img src="img/williamAutor.PNG" alt="Imagem autor" class="imagemAutor">
+                            <h1 class="nomeAutor">William</h1>
+                        </li>
+                    </ul>
+            </header>
+
+            <main class="conteudoPrincipal container">
+                <aside class="menuNavegacaoDesktop">
+                    <h1>MENU</h1>
+                        <nav>
+                            <ul class="itensNavegacaoPai">
+                                <li class="itensNavegacaoFilhos">
+                                <a href="index.html"><img src="img/iconeEditorDeCodigo.png" alt="Icone editor de codigo" class="iconeEditorDeTexto"></a>
+                                <h2 class="tituloEditorDeCodigo">Editor de código</h2>
+                                </li>
+                                <li class="itensNavegacaoFilhos">
+                                <a href="#"><img src="img/IconeComunidade.png" alt="Icone comunidade" class="iconeComunidade"></a>
+                                <h2 class="tituloComunidade">Comunidade</h2>
+                                </li>
+                            </ul>
+                        </nav>
+                </aside>
+                
+                <section class="conteudoEditorDeTexto">
+                <div class="backgroundAbaixoEditorDeTexto">
+                    <div class="backgroundAcimaEditorDeTexto">
+                    <img src="img/mac_buttons.svg" alt="Botoes decorativos do editor de texto" class="botoesEditorDeTexto">
+                    <div class="editorDeTextoCaixa">
+                        <pre class="editorDeCodigo"><code class="preview" contenteditable="true" aria-label="Editor de código">function test(){}</code></pre>
+                    </div>
+                    </div>
+                    <button type="button" class="botaoHighlight botao">Visualizar com o highlight</button>
+                </div>
+                </section>
+
+                <form class="conteudoFormulario">
+                    <section class="seuProjeto">
+                        <h1>SEU PROJETO</h1>
+                        <input type="text" class="nomeProjeto" placeholder="Nome do seu projeto">
+                        <input type="text" class="descricaoProjeto" placeholder="Descrição do seu projeto">
+                    </section>
+                    <section class="personalizacao">
+                        <h1>PERSONALIZAÇÃO</h1>
+                        <div class="conteudoPersonalizacaoTabletInline">
+                            <select name="selecaoLinguagem" class="selecaoLinguagem">
+                                <option value="javascript">Javascript</option>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                            </select>
+                            <input type="color" class="escolheCorBackgroundEditorDeTexto" value="#6BD1FF">
+                        </div>
+                    </section>
+                    <button type="submit" class="botaoSalvarProjeto botao">Salvar Projeto</button>
+                </form>
+            </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+        </body>
+    </html>

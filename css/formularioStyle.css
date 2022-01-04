@@ -1,0 +1,182 @@
+
+    .conteudoFormulario{
+        width: 100%;
+        margin-top: 9rem;
+    }
+
+    .seuProjeto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personalizacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seuProjeto h1{
+        font-family: var(--inter);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--corBrancoFonte);
+    }
+    
+    .seuProjeto input{
+        font-family: var(--inter);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 24px;
+        background-color: var(--corBackgroundInput);
+        border: none;
+        border-radius: 8px;
+
+        color: #FFFFFF;
+        opacity: 0.64;
+
+        margin: 1rem 0;
+    }
+
+    .seuProjeto .nomeProjeto{
+        width: 100%;
+        height: 3em;
+    }
+
+    .seuProjeto .descricaoProjeto{
+        width: 100%;
+        height: 5em;
+    }
+
+    .personalizacao h1{
+        font-family: var(--inter);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+
+        color: var(--corBrancoFonte);
+    }
+
+    .personalizacao .selecaoLinguagem{
+        width: 100%;
+        height: 56px;
+        color: var(--corBrancoFonte);
+        border-radius: 8px;
+        border: none;
+        background-color: var(--corBackgroundInput);
+        margin: 1rem 0;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: var(--inter);
+    }
+
+    .selecaoLinguagemFilhos{
+        background-color: var(--corBackgroundInput);
+    }
+
+    .personalizacao .selecaoLinguagem:hover{
+        background-color: var(--corHoverElemento);
+        transition: 0.4s;
+    }
+
+    .personalizacao .escolheCorBackgroundEditorDeTexto{
+        cursor: pointer;
+        width: 100%;
+        height: 56px;
+        padding: 0.3rem;
+        border-radius: 8px;
+        border: 1px solid var(--corBrancoBorda);
+        background-color: transparent;
+    }
+
+    .botaoSalvarProjeto{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: var(--corAzulBotaoSalvarProjeto);
+        color: var(--corPretoFonte);
+        cursor: pointer;
+
+    }
+
+    input::placeholder{
+        color: var(--corBrancoFontePlaceholder);
+    }
+
+    input:hover, select:hover{
+        background-color: var(--corHoverElementoInput);
+        transition: 1s;
+    }
+
+    .botaoSalvarProjeto:hover{
+        background-color: var(--corHoverBotaoSalvarProjeto);
+        transition: 1s;
+    }
+
+    @media screen and (min-width: 768px){
+
+        .conteudoFormulario{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10rem;
+        }
+
+        .seuProjeto .nomeProjeto{
+            width: 100%;
+            font-size: 1rem;
+        }
+    
+        .seuProjeto .descricaoProjeto{
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .conteudoPersonalizacaoTabletInline{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .personalizacao .selecaoLinguagem{
+            width: 48%;
+            font-size: 1rem;
+        }
+
+        .personalizacao .escolheCorBackgroundEditorDeTexto{
+            width: 48%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .conteudoFormulario{
+            padding: 0 0 0 3%;
+            width: 35%;
+            display: flex;
+            margin: 0;
+        }
+
+        .conteudoPersonalizacaoTabletInline{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .personalizacao .selecaoLinguagem, .personalizacao .escolheCorBackgroundEditorDeTexto{
+            width: 100%;
+        }
+
+        .personalizacao{
+            margin-top: 3rem;
+        }
+    }

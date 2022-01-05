@@ -1,4 +1,8 @@
 
+        .conteudoEditorDeTexto{
+            width: 100%;
+        }
+
         .menuNavegacaoDesktop{
             display: none;
         }
@@ -9,6 +13,7 @@
         }
 
         .backgroundAbaixoEditorDeTexto{
+            width: 100%;
             padding: 2em 2em 4em 2em;
             height: auto;
             border-radius: 8px;
@@ -61,6 +66,7 @@
             box-sizing: border-box;
             border-radius: 7px;
             height: 100%;
+            white-space: pre-wrap;
         }
 
         code{
@@ -69,17 +75,22 @@
 
         .botaoHighlight{
             height: auto;
-            margin-top: 1rem;
+            margin-top: 4rem;
             background-color: var(--corAzulBotaoHighlight);     
             color: var(--corBrancoFonte);
             border: none;
             cursor: pointer;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
         }
 
         .botaoHighlight:hover{
             background-color: var(--corHoverBotaoHighlight) ;
             transition: 1s;
+        }
+
+        .botaoHighlight:active{
+            background-color: var(--corActiveBotaoHighlight);
+            transition: 0s;
         }
 
         .iconeEditorDeTexto:hover{
@@ -129,7 +140,7 @@
             } */
 
             .menuNavegacaoDesktop{
-                width: 34%;
+                width: 32%;
                 padding-right: 6.5rem;
                 display: inline-flex;
                 flex-direction: column;

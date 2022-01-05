@@ -9,7 +9,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
             </style>
             <link rel="stylesheet" href="css/reset.css">
-            <link rel="stylesheet" href="css/dark.css">
+            <link rel="stylesheet" href="css/arta.css">
             <link rel="stylesheet" href="css/base.css">
             <link rel="stylesheet" href="css/cabecalho.css">
             <link rel="stylesheet" href="css/conteudoPrincipal.css">
@@ -66,10 +66,10 @@
                     <div class="backgroundAcimaEditorDeTexto">
                     <img src="img/mac_buttons.svg" alt="Botoes decorativos do editor de texto" class="botoesEditorDeTexto">
                     <div class="editorDeTextoCaixa">
-                        <pre class="editorDeCodigo"><code class="preview" contenteditable="true" aria-label="Editor de código">function test(){}</code></pre>
+                        <code class="preview hljs" contenteditable="true" aria-label="Editor de código">function test(){const x = 20;}</code>
                     </div>
                     </div>
-                    <button type="button" class="botaoHighlight botao">Visualizar com o highlight</button>
+                    <button class="botaoHighlight botao">Visualizar com o highlight</button>
                 </div>
                 </section>
 
@@ -94,5 +94,7 @@
                 </form>
             </main>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+            <script>hljs.highlightAll()</script>
+            <script src="index.js"></script>
         </body>
     </html>

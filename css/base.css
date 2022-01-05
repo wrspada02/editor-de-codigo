@@ -18,7 +18,8 @@
         --corHoverBotaoHighlight: rgba(80, 129, 251, 0.16);
         --corHoverBotaoSalvarProjeto: #7BA4FC;
         --corHoverElementoNavegacao: #5081FB;
-        --corHoverElementoComum: rgba(80, 129, 251, 0.08);;
+        --corHoverElementoComum: rgba(80, 129, 251, 0.08);
+        --corActiveBotaoHighlight: #7BA4FC;
 
         --inter: 'Inter', sans-serif;
         --robotoMono: 'Roboto', sans-serif;

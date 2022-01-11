@@ -1,4 +1,4 @@
-
+(() => {
 
     /* Adicionando Highligth JS */
 
@@ -179,8 +179,6 @@
     /* Funcao de fechar barra de pesquisa */
 
     const fechaBarraDePesquisa = () => {
-
-        /* Desabilitar o display do botao e criar outro... */
         
         const barraDePesquisaMobile = document.querySelector('.barraDePesquisaMobile');
         const elementoLogo = document.querySelector('[data-elementoLogo]');
@@ -217,3 +215,5 @@
 
     const botaoMenuLateralTablet = document.querySelector('[data-menuTablet]');
     botaoMenuLateralTablet.addEventListener('click', menuLateralOptions);
+
+})()

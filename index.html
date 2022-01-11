@@ -16,22 +16,24 @@
             <link rel="stylesheet" href="css/editorDeTextoStyle.css">
             <link rel="stylesheet" href="css/conteudoFormulario.css">
             <link rel="stylesheet" href="css/formularioStyle.css">
+            <link rel="stylesheet" href="css/menuLateralMobile.css">
         </head>
 
         <body>
             <header class="cabecalho container">
-                    <ul class="conteudoCabecalhoMobile">
-                        <li><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
-                        <div class="itensListaMobile">
-                        <li class="itensFilhosLista"><img src="img/Pesquisa.png" alt="Lupa de pesquisa"></li>
-                        <li class="itensFilhosLista"><img src="img/Menu.png" alt="Barra de detalhes"></li>
+                    <ul class="conteudoCabecalhoMobile" data-cabecalhoMobile>
+                        <li data-elementoLogo><img src="img/Logo cabecalho.png" alt="Logo Alura DEV" data-logoCabelho></li>
+                        <li class="itensListaMobile" data-listaMobile>
+                        <div class="elementoPesquisa" data-elementoPesquisa><img src="img/Pesquisa.png" alt="Lupa de pesquisa" data-lupaPesquisa>
+                        <img src="img/Menu.png" alt="Barra de detalhes" data-menuMobile data-fecharBarraPesquisaMobile>
                         </div>
+                        </li>
                     </ul>
 
                     <ul class="conteudoCabecalhoTablet">
                         <li class="imagemLogoCabecalho"><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
                         <li class="barraDePesquisa"><input type="search" placeholder="Busque por algo"></li>
-                        <li class="menuAutor"><img src="img/Menu.png" alt="Barra de detalhes"></li>
+                        <li class="menuAutor"><img src="img/Menu.png" alt="Barra de detalhes" data-menuTablet></li>
                     </ul>
                     
                     <ul class="conteudoCabecalhoDesktop">
@@ -44,7 +46,7 @@
                     </ul>
             </header>
 
-            <main class="conteudoPrincipal container">
+            <main class="conteudoPrincipal container" data-main>
                 <aside class="menuNavegacaoDesktop">
                     <h1>MENU</h1>
                         <nav>
@@ -62,7 +64,7 @@
                 </aside>
                 
                 <section class="conteudoEditorDeTexto">
-                <div class="backgroundAbaixoEditorDeTexto">
+                <div class="backgroundAbaixoEditorDeTexto" data-background>
                     <div class="backgroundAcimaEditorDeTexto">
                     <img src="img/mac_buttons.svg" alt="Botoes decorativos do editor de texto" class="botoesEditorDeTexto">
                     <div class="editorDeTextoCaixa">
@@ -83,11 +85,13 @@
                         <h1>PERSONALIZAÇÃO</h1>
                         <div class="conteudoPersonalizacaoTabletInline">
                             <select name="selecaoLinguagem" class="selecaoLinguagem">
-                                <option value="javascript">Javascript</option>
-                                <option value="html">HTML</option>
-                                <option value="css">CSS</option>
+                                <option value="javascript" class="selecaoLinguagemFilhos">Javascript</option>
+                                <option value="html" class="selecaoLinguagemFilhos">HTML</option>
+                                <option value="css" class="selecaoLinguagemFilhos">CSS</option>
+                                <option value="java" class="selecaoLinguagemFilhos">Java</option>
+                                <option value="python" class="selecaoLinguagemFilhos">Python</option>
                             </select>
-                            <input type="color" class="escolheCorBackgroundEditorDeTexto" value="#6BD1FF">
+                            <input type="color" class="escolheCorBackgroundEditorDeTexto" value="#6BD1FF" onchange="mudaCor" data-color>
                         </div>
                     </section>
                     <button type="submit" class="botaoSalvarProjeto botao">Salvar Projeto</button>
@@ -95,6 +99,6 @@
             </main>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
             <script>hljs.highlightAll()</script>
-            <script src="index.js"></script>
+            <script src="script.js"></script>
         </body>
     </html>

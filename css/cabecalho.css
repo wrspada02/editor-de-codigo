@@ -8,13 +8,16 @@
 
     .itensListaMobile{
         display: flex;
-        justify-content: space-between;
-        margin-right: 5%;
-        width: 20%;
+        justify-content: space-around;
+        height: 4em;
+        align-items: center;
+        width: 100%;
     }
 
-    .itensFilhosLista{
-        padding: 8% 8%;
+    .elementoPesquisa{
+        display: flex;  
+        justify-content: space-around;
+        width: 100%;
     }
 
     .conteudoCabecalhoTablet{
@@ -122,8 +125,8 @@
         }
         
         .logoCabecalhoDesktop{
-            width: 34%;
-            padding-right: 6rem;
+            width: 35%;
+            padding-right: 40px;
         }
 
         .barraDePesquisa{

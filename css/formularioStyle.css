@@ -161,7 +161,7 @@
     @media screen and (min-width: 1024px) {
 
         .conteudoFormulario{
-            padding: 0 0 0 3%;
+            margin: 0 0 0 3%;
             width: 35%;
             display: flex;
             margin: 0;

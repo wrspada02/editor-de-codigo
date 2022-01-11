@@ -18,9 +18,6 @@
     })
 
 
-
-
-
     /* Colocando a cor de fundo do input */
 
     const mudaCor = () => {
@@ -33,12 +30,8 @@
     corInput.addEventListener('change', mudaCor);
 
 
-    
-
-
     /* Criando elementos do menu lateral via DOM */
 
-    /* Criando elementos */
     const divMenuLateral = document.createElement('div');
     const divElementoAutor = document.createElement('div');
     const listaElementos = document.createElement('ul');
@@ -51,9 +44,9 @@
     const tituloIconeComunidade = document.createElement('h2');
     const tituloIconeAutor = document.createElement('h2');
 
-
     const conteudoPagina = document.querySelector('[data-main]');
     
+
     /* Estruturando a div */
     divMenuLateral.appendChild(listaElementos);
     divMenuLateral.appendChild(divElementoAutor);
@@ -67,10 +60,12 @@
     itensListaSecond.appendChild(tituloIconeComunidade);
     conteudoPagina.appendChild(divMenuLateral);
 
+
     /* Adicionando o titulo do menu lateral */
     tituloIconeEditorDeCodigo.textContent = `Editor de código`;
     tituloIconeComunidade.textContent = `Comunidade`;
     tituloIconeAutor.textContent = `William`;
+
 
     /* Adicionando imagens */
     iconeEditorDeCodigo.src = "img/iconeEditorDeCodigo.png";
@@ -97,7 +92,6 @@
     divMenuLateral.style.display = "none";
     
 
-
     /* Mostrando o menu lateral */
     const mostraMenuLateral = () => {
 
@@ -105,7 +99,6 @@
     iconeMenu.src = "img/iconeFechaMenu.png";
     const menuMobile = document.querySelector(['.divMenuLateralLista']);
     menuMobile.style.display = "initial";
-
 
     /* Tablet */
     botaoMenuLateralTablet.src = "img/iconeFechaMenu.png";
@@ -127,6 +120,7 @@
 
     }
 
+
     /* Funcao da logica do menu lateral */
     const menuLateralOptions = () => {
         if(menuLateral == undefined || menuLateral == false){ 
@@ -138,14 +132,11 @@
         }
     }
 
+
     /* Atribuindo a funcao no icone menu */
     let menuLateral;
     const BotaoMenuMobile = document.querySelector('[data-menuMobile]');
     BotaoMenuMobile.addEventListener('click', menuLateralOptions);
-    
-
-
-
 
 
     /* Funcao de mostrar barra de pesquisa */
@@ -176,6 +167,7 @@
         barraDePesquisaMobile.placeholder = "Busque por algo";
     }
 
+
     /* Funcao de fechar barra de pesquisa */
 
     const fechaBarraDePesquisa = () => {
@@ -192,6 +184,7 @@
         fecharBarraDePesquisaMobile.style.display = "none";
     }
 
+
     /* Criando elementos da barra de pesquisa e estruturando a logica */
     const barraDePesquisaMobile = document.createElement('input');
     barraDePesquisaMobile.style.display = "none";
@@ -206,9 +199,9 @@
     const lupaPesquisa = document.querySelector('[data-lupaPesquisa]');
     lupaPesquisa.addEventListener('click', mostraBarraDePesquisa);
 
+
     /* Fechar barra de pesquisa */
     fecharBarraDePesquisaMobile.addEventListener('click', fechaBarraDePesquisa);
-
 
 
     /* Mostrando menu lateral no tablet */

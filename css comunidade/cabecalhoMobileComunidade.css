@@ -1,0 +1,27 @@
+
+
+    .cabecalhoMobileComunidade{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logoCabecalho{
+        width: auto;
+    }
+
+    .iconesCabecalhoMobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .iconePesquisar, .iconeMenu{
+        padding: 5%;
+        border-radius: 10px;
+    }
+
+    .cabecalhoTabletComunidade, .cabecalhoDesktopComunidade{
+        display: none;
+    }

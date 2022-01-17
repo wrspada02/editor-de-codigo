@@ -1,0 +1,104 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0"><!-- TAG para deixar o layout responsivo -->
+            <title>Alura DEV | Editor de código</title>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
+            </style>
+            <link rel="stylesheet" href="css editor de codigo/reset.css">
+            <link rel="stylesheet" href="css editor de codigo/arta.css">
+            <link rel="stylesheet" href="css editor de codigo/base.css">
+            <link rel="stylesheet" href="css editor de codigo/cabecalho.css">
+            <link rel="stylesheet" href="css editor de codigo/conteudoPrincipal.css">
+            <link rel="stylesheet" href="css editor de codigo/editorDeTextoStyle.css">
+            <link rel="stylesheet" href="css editor de codigo/conteudoFormulario.css">
+            <link rel="stylesheet" href="css editor de codigo/formularioStyle.css">
+            <link rel="stylesheet" href="css editor de codigo/menuLateralMobile.css">
+        </head>
+
+        <body>
+            <header class="cabecalho container">
+                    <ul class="conteudoCabecalhoMobile" data-cabecalhoMobile>
+                        <li data-elementoLogo><img src="img/Logo cabecalho.png" alt="Logo Alura DEV" data-logoCabelho></li>
+                        <li class="itensListaMobile" data-listaMobile>
+                        <div class="elementoPesquisa" data-elementoPesquisa><img src="img/Pesquisa.png" alt="Lupa de pesquisa" data-lupaPesquisa>
+                        <img src="img/Menu.png" alt="Barra de detalhes" data-menuMobile data-fecharBarraPesquisaMobile>
+                        </div>
+                        </li>
+                    </ul>
+
+                    <ul class="conteudoCabecalhoTablet">
+                        <li class="imagemLogoCabecalho"><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
+                        <li class="barraDePesquisa"><input type="search" placeholder="Busque por algo"></li>
+                        <li class="menuAutor"><img src="img/Menu.png" alt="Barra de detalhes" data-menuTablet></li>
+                    </ul>
+                    
+                    <ul class="conteudoCabecalhoDesktop">
+                        <li class="logoCabecalhoDesktop"><img src="img/Logo cabecalho.png" alt="Logo Alura DEV"></li>
+                        <li class="barraDePesquisa"><input type="search" placeholder="Busque por algo"></li>
+                        <li class="conteudoCabecalhoDesktopInline">
+                            <img src="img/williamAutor.PNG" alt="Imagem autor" class="imagemAutor">
+                            <h1 class="nomeAutor">William</h1>
+                        </li>
+                    </ul>
+            </header>
+
+            <main class="conteudoPrincipal container" data-main>
+                <aside class="menuNavegacaoDesktop">
+                    <h1>MENU</h1>
+                        <nav>
+                            <ul class="itensNavegacaoPai">
+                                <li class="itensNavegacaoFilhos">
+                                <a href="index.html"><img src="img/iconeEditorDeCodigo.png" alt="Icone editor de codigo" class="iconeEditorDeTexto"></a>
+                                <h2 class="tituloEditorDeCodigo">Editor de código</h2>
+                                </li>
+                                <li class="itensNavegacaoFilhos">
+                                <a href="#"><img src="img/IconeComunidade.png" alt="Icone comunidade" class="iconeComunidade"></a>
+                                <h2 class="tituloComunidade">Comunidade</h2>
+                                </li>
+                            </ul>
+                        </nav>
+                </aside>
+                
+                <section class="conteudoEditorDeTexto">
+                <div class="backgroundAbaixoEditorDeTexto" data-background data-conteudoCarta>
+                    <div class="backgroundAcimaEditorDeTexto">
+                    <img src="img/mac_buttons.svg" alt="Botoes decorativos do editor de texto" class="botoesEditorDeTexto">
+                    <div class="editorDeTextoCaixa">
+                        <code class="preview hljs" contenteditable="true" aria-label="Editor de código">function test(){const x = 20;}</code>
+                    </div>
+                    </div>
+                </div>
+                <button class="botaoHighlight botao">Visualizar com o highlight</button>
+                </section>
+
+                <form class="conteudoFormulario">
+                    <section class="seuProjeto">
+                        <h1>SEU PROJETO</h1>
+                        <input type="text" class="nomeProjeto" placeholder="Nome do seu projeto" data-tituloProjeto>
+                        <input type="text" class="descricaoProjeto" placeholder="Descrição do seu projeto" data-descricaoProjeto>
+                    </section>
+                    <section class="personalizacao">
+                        <h1>PERSONALIZAÇÃO</h1>
+                        <div class="conteudoPersonalizacaoTabletInline">
+                            <select name="selecaoLinguagem" class="selecaoLinguagem" data-selecaoLinguagem>
+                                <option value="javascript" class="selecaoLinguagemFilhos">Javascript</option>
+                                <option value="html" class="selecaoLinguagemFilhos">HTML</option>
+                                <option value="css" class="selecaoLinguagemFilhos">CSS</option>
+                                <option value="java" class="selecaoLinguagemFilhos">Java</option>
+                                <option value="python" class="selecaoLinguagemFilhos">Python</option>
+                            </select>
+                            <input type="color" class="escolheCorBackgroundEditorDeTexto" value="#6BD1FF" data-color>
+                        </div>
+                    </section>
+                    <button type="submit" class="botaoSalvarProjeto botao" data-salvarProjeto>Salvar Projeto</button>
+                </form>
+            </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+            <script>hljs.highlightAll()</script>
+            <script src="scriptEditorCodigo.js" type="module"></script>
+        </body>
+    </html>

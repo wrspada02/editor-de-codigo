@@ -1,0 +1,169 @@
+
+    .conteudoCabecalhoMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .itensListaMobile{
+        display: flex;
+        justify-content: space-around;
+        height: 4em;
+        align-items: center;
+        width: 100%;
+    }
+
+    .elementoPesquisa{
+        display: flex;  
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .conteudoCabecalhoTablet{
+        display: none;
+    }
+
+    .conteudoCabecalhoDesktop{
+        display: none;
+    }
+
+    input{
+        background-color: var(--corBackgroundInput);
+    }
+
+    input::placeholder{
+        color: var(--corBrancoFontePlaceholder);
+    }
+
+    input:hover{
+        background-color: var(--corHoverElementoInput);
+        transition: 1s;
+    }
+
+    .conteudoCabecalhoDesktopInline:hover{
+        background-color: var(--corHoverElementoComum);
+        transition: 1s;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .menuAutor:hover{
+        background-color: var(--corHoverElementoComum);
+        transition: 0.5s;
+        border-radius: 0.5rem;
+    }
+
+    .itensFilhosLista:hover{
+        background-color: var(--corHoverElementoComum);
+        transition: 0.5s;
+        border-radius: 0.5rem;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .conteudoCabecalhoMobile{
+            display: none;
+        }
+        
+        .conteudoCabecalhoDesktop{
+            display: none;
+        }
+
+        .conteudoCabecalhoTablet{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 1rem;
+        }
+
+        .imagemLogoCabecalho{
+            width: 25%;
+            padding-right: 5rem;
+        }
+
+        .barraDePesquisa{
+            width: 80%;
+            margin-right: 5%;
+            background-color: var(--corBackgroundInput);
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .barraDePesquisa input{
+            width: 100%;
+            height: 3.5rem;
+            background-color: transparent;
+            border: none;
+            border-radius: 0.5em;
+            font-size: 1rem;
+        }
+
+        .menuAutor{
+            padding: 2%;
+        }
+    }
+
+
+     @media screen and (min-width: 1024px) {
+        
+        .conteudoCabecalhoMobile{
+            display: none;
+        }
+
+        .conteudoCabecalhoTablet{
+            display: none;
+        }
+
+        .conteudoCabecalhoDesktop{
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logoCabecalhoDesktop{
+            width: 35%;
+            padding-right: 40px;
+        }
+
+        .barraDePesquisa{
+            width: 100%; 
+            margin-right: 13%;
+            height: 3rem;
+        }
+
+        .barraDePesquisa input{
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 0.5em;
+        }
+
+        .conteudoCabecalhoDesktopInline{
+            justify-content: flex-end;
+            display: inline-flex;
+            align-items: center;
+            width: 10%;
+            padding: 1% 1.5%;
+        }
+
+        .conteudoCabecalhoDesktopInline .imagemAutor{
+            width: 2em;
+            border-radius: 60%;
+        }
+        
+        .conteudoCabecalhoDesktop h1{
+            font-family: var(--inter);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 24px;
+            color: var(--corBrancoFonte);
+            margin-left: 0.5rem;
+        }
+    }  
+

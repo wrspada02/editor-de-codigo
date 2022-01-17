@@ -1,0 +1,200 @@
+
+        .conteudoEditorDeTexto{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .menuNavegacaoDesktop{
+            display: none;
+        }
+
+        .conteudoEditorDeTexto{
+            display: flex;
+            justify-content: center;
+        }
+
+        .backgroundAbaixoEditorDeTexto{
+            padding: 2em 2em 2em 2em;
+            height: auto;
+            border-radius: 8px;
+            background-color: var(--corAzulClaroBackgroundAbaixoEditorDeCodigo);
+        }
+    
+        .backgroundAcimaEditorDeTexto{
+            padding: 1.5em 1em;
+            height: 100%;
+            background-color: var(--corPretoBackgroundAcimaEditorDeCodigo);
+            border-radius: 8px;
+        }
+    
+        .botoesEditorDeTexto{
+            display: block;
+            position: initial;
+            width: 52px;
+            height: 12px;
+        }
+    
+        .editorDeTextoCaixa{
+            background-color: transparent;
+            position: relative;
+            height: 80%;
+            top: 1rem;
+    
+            color: var(--corBrancoFonte);
+    
+            font-family: var(--robotoMono);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            border: none;
+            line-height: 18px;
+        }
+
+        pre{
+            padding: 4px;
+            max-width: 100%;
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;  
+        }
+        
+        .preview{
+            position: relative;
+            width: 100%;
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 7px;
+            height: 100%;
+            white-space: pre-wrap;
+        }
+
+        code{
+            display: block;
+        }
+
+        .botaoHighlight{
+            height: auto;
+            margin-top: 4rem;
+            background-color: var(--corAzulBotaoHighlight);     
+            color: var(--corBrancoFonte);
+            border: none;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .botaoHighlight:hover{
+            background-color: var(--corHoverBotaoHighlight) ;
+            transition: 1s;
+        }
+
+        .botaoHighlight:active{
+            background-color: var(--corActiveBotaoHighlight);
+            transition: 0s;
+        }
+
+        .iconeEditorDeTexto:hover{
+            background-color: var(--corHoverIconeEditorDeTexto);
+            transition: 2.5s;
+            border-radius: 1rem;
+        }
+
+        .iconeComunidade:hover{
+            background-color: var(--corHoverIconeComunidade);
+            transition: 2.5s;
+            border-radius: 1rem;
+        }
+
+        @media screen and (min-width: 768px) {
+
+            .menuNavegacaoDesktop{
+                display: none;
+            }
+            
+            .conteudoEditorDeTexto{
+                width: 100%;
+            }
+
+            .backgroundAcimaEditorDeTexto{
+                width: auto;
+            }
+
+            .editorDeTextoCaixa{
+                width: 100%;
+            }
+
+            .botaoHighlight{
+                margin-top: 4rem;
+            }
+
+        }
+
+        @media screen and (min-width: 1024px) {
+
+            .conteudoEditorDeTexto{
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+                margin-right: 10%;
+            }
+
+            .menuNavegacaoDesktop{
+                width: 35%;
+                display: inline-flex;
+                flex-direction: column;
+            }
+
+            
+            .menuNavegacaoDesktop h1{
+                display: block;
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: var(--inter);
+                line-height: 18px;
+                color: var(--corBrancoFonte); 
+                margin-bottom: 1rem;
+            }
+
+            .itensNavegacaoPai{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .itensNavegacaoPai h2{
+                font-size: 1rem;
+            } 
+
+            .itensNavegacaoFilhos{
+                display: inline-flex;
+                align-items: center;
+                margin: 0 0 1rem 0;
+            }
+
+            .tituloEditorDeCodigo, .tituloComunidade{
+                margin-left: 0.5rem;
+                font-style: normal;
+                font-weight: normal;
+                font-family: var(--inter);
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--corBrancoFonte);
+            }
+
+            .iconeEditorDeTexto, .iconeComunidade{
+                cursor: pointer;
+            }
+
+            .iconeEditorDeTexto{
+                background-color: var(--corIconeEditorDeTexto);
+                padding: 1rem;
+                border-radius: 1em;
+            }
+
+            .iconeComunidade{
+                background-color: var(--corIconeComunidade);
+                padding: 1.3rem 1.1rem;
+                border-radius: 1em;
+            }
+        }

@@ -220,13 +220,17 @@
         const tituloProjeto = document.querySelector('[data-tituloProjeto]').value;
         const descricaoProjeto = document.querySelector('[data-descricaoProjeto]').value;
         const linguagemSelecionada = document.querySelector('[data-selecaoLinguagem]').value;
+        const valorBackgroundEditorCodigo = document.querySelector('[data-background]').style.backgroundColor;
         
         const dados = {
             conteudoProjeto,
             tituloProjeto,
             descricaoProjeto,
-            linguagemSelecionada
+            linguagemSelecionada,
+            valorBackgroundEditorCodigo
         }
+
+        console.log(valorBackgroundEditorCodigo);
 
         const dadosNavegadorAtualizado = [...dadosNavegador, dados];
 

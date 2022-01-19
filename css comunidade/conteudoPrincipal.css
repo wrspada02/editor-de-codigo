@@ -4,5 +4,40 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .conteudoEncapsulamento{
         width: 100%;
+        margin-top: 1.5em;
+        background-color: var(--transparenciaCarta);
+        border-radius: 10px;
+        font-family: var(--fontRobotoMono);
+    }
+
+    .conteudoCodigo{
+        padding: 1.5em 1.5em;
+        border-radius: 10px;
+        background-color: var(--backgroundConteudoCodigo);
+        color: var(--colorFonte);
+    }
+
+    .backgroundConteudoCarta{
+        padding: 1.5em 1.5em;
+        border-radius: 10px;
+    }
+
+    .conteudoDescricao{
+        padding: 1.5em 1.5em;
+        border-radius: 10px;
+        color: var(--colorFonte);
+    }
+
+    .flexTituloLinguagem{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linguagemProjeto{
+        font-weight: bold;
+        text-transform: uppercase;
     }

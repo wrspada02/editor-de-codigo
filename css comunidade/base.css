@@ -1,6 +1,12 @@
 
     :root{
         --backgroundFundoPagina: #051D3B;
+        --backgroundConteudoCodigo: #141414;
+        --colorFonte: #FFF;
+        --transparenciaCarta:rgba(0, 0, 0, 0.16);
+
+        
+        --fontRobotoMono: 'Roboto', sans-serif;
     }
 
 

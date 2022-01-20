@@ -25,3 +25,84 @@
     .cabecalhoTabletComunidade, .cabecalhoDesktopComunidade{
         display: none;
     }
+
+    .barraDePesquisaTablet, .barraPesquisaDesktop{
+        background-color: var(--corHoverElementoComum);
+        transition: 0.5s;
+        border-radius: 0.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        .cabecalhoMobileComunidade{
+            display: none;
+        }
+
+        .cabecalhoTabletComunidade{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .iconeMenuTablet{
+            margin-right: 1em;
+        }
+        
+        .barraDePesquisaTablet{
+            width: 50%;
+            margin-right: 5%;
+            background-color: var(--backgroundBarraDePesquisa);
+            border: none;
+            border-radius: 10px;
+            height: 50px;
+        }
+
+    @media screen and (min-width: 1024px) {
+        .cabecalhoMobileComunidade, .cabecalhoTabletComunidade{
+            display: none;
+        }
+
+        .cabecalhoDesktopComunidade{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .barraPesquisaDesktop{
+            width: 50%;
+            margin-right: 5%;
+            background-color: var(--backgroundBarraDePesquisa);
+            border: none;
+            border-radius: 10px;
+            height: 50px;
+        }
+
+        .itensFlexAutorCabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+        }
+
+        .imagemAutor{
+            width: 25%;
+            border-radius: 60%;
+        }
+
+        .nomeAutor{
+            font-family: var(--fontInter);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1em;
+            line-height: 24px;
+            color: var(--colorFonte);
+            margin-left: 0.5rem;
+        }
+
+        .itensFlexAutorCabecalho:hover{
+            background-color: var(--corHoverElementoComum);
+            transition: 0.5s;
+            border-radius: 0.5rem;
+        }
+    }    
+    }

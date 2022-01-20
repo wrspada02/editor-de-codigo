@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css comunidade/conteudoPrincipal.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
         </style>
     </head>
 
@@ -23,12 +24,36 @@
                         <img src="img/Menu.png" alt="Icone menu" class="iconeMenu">
                     </div>
                 </li>
-                <li class="cabecalhoTabletComunidade"></li>
-                <li class="cabecalhoDesktopComunidade"></li>
+                <li class="cabecalhoTabletComunidade">
+                    <img src="img/Logo cabecalho.png" alt="Logo cabecalho Alura" class="logoCabecalhoTablet">
+                    <input type="text" class="barraDePesquisaTablet" placeholder="Busque por algo">
+                    <img src="img/Menu.png" alt="Icone menu" class="iconeMenuTablet">
+                </li>
+                <li class="cabecalhoDesktopComunidade">
+                    <img src="img/Logo cabecalho.png" alt="Logo cabecalho Alura" class="logoCabecalhoDesktop">
+                    <input type="text" class="barraPesquisaDesktop" placeholder="Busque por algo">
+                    <div class="itensFlexAutorCabecalho">
+                        <img src="img/williamAutor.PNG" alt="Imagem autor" class="imagemAutor">
+                        <h2 class="nomeAutor">William</h2>
+                    </div>
+                </li>
             </ul>
         </header>
 
         <main class="conteudoCartas container" data-conteudoPrincipal>
+            <aside class="menuNavegacao">
+                <ul class="listaNavegacao">
+                    <li class="itemNavegacaoEditorCodigo">
+                       <a href="editorCodigo.html"><img src="img/iconeEditorDeCodigo.png" alt="Menu editor de código" class="iconesMenu iconeMenuEditorCodigo"></a>
+                        <h2 class="tituloEditorDeCodigo">Editor de código</h2>
+                    </li>
+                    <li class="itemNavegacaoComunidade">
+                        <a href="comunidade.html"><img src="img/IconeComunidade.png" alt="Menu comunidade" class="iconesMenu iconeMenuComunidade"></a>
+                        <h2 class="tituloComunidade">Comunidade</h2>
+                    </li>
+                </nav>
+            </aside>
+            <section class="sectionCartas" data-sectionCartas></section>
         </main>
         <script src="scriptComunidade.js" type="module"></script>
     </body>

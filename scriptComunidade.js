@@ -4,20 +4,22 @@
         let i = 0;
         
         packConteudo.forEach(() => {
-            
+             
             const {conteudoProjeto} = packConteudo[i];
             const {descricaoProjeto} = packConteudo[i];
             const {tituloProjeto} = packConteudo[i];
             const {linguagemSelecionada} = packConteudo[i];
             const {valorBackgroundEditorCodigo} = packConteudo[i];
             
+            i += 1;
+            
             imprimeConteudoTela({conteudoProjeto, tituloProjeto, descricaoProjeto, linguagemSelecionada, valorBackgroundEditorCodigo});
-            i =+ 1;
         });           
     }
     
     const imprimeConteudoTela = ({conteudoProjeto, tituloProjeto, descricaoProjeto, linguagemSelecionada, valorBackgroundEditorCodigo}) => {  
         
+        const conteudoPagina = document.querySelector('[data-sectionCartas]');
         const conteudoEncapsulamento = document.createElement('div');
         conteudoEncapsulamento.classList.add('conteudoEncapsulamento');
         const conteudoCarta = document.createElement('div');
@@ -41,6 +43,5 @@
         divConteudoCartaBackground.style.backgroundColor = valorBackgroundEditorCodigo;
 
     }
-
-    const conteudoPagina = document.querySelector('[data-conteudoPrincipal]');
+    
     capturaElementosNavegador();

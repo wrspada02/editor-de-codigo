@@ -22,7 +22,6 @@
     const mudaCor = () => {
 
         corDeFundo.style.backgroundColor = corInput.value;
-
         
     }
     

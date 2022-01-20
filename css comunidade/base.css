@@ -4,9 +4,15 @@
         --backgroundConteudoCodigo: #141414;
         --colorFonte: #FFF;
         --transparenciaCarta:rgba(0, 0, 0, 0.16);
-
+        --backgroundBarraDePesquisa: rgba(255, 255, 255, 0.16);
+        --backgroundIconeEditorCodigo: rgba(80, 129, 251, 0.16);
+        --backgroundIconeComunidade:  #5081FB;
+        --corHoverIconeComunidade: #7BA4FC;
+        --corHoverIconeEditorDeTexto: #96B9FD;
+        --corHoverElementoComum: rgba(80, 129, 251, 0.08);
         
         --fontRobotoMono: 'Roboto', sans-serif;
+        --fontInter: 'Inter', sans-serif;
     }
 
 

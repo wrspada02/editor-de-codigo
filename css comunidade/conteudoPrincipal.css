@@ -20,6 +20,7 @@
         border-radius: 10px;
         font-family: var(--fontRobotoMono);
         font-size: 1rem;
+        word-wrap: break-word;
     }
 
     .conteudoCodigo{
@@ -38,6 +39,7 @@
         padding: 1.5em 1.5em;
         border-radius: 10px;
         color: var(--colorFonte);
+        font-weight: bold;
     }
 
     .flexTituloLinguagem{
@@ -46,7 +48,6 @@
     }
 
     .linguagemProjeto{
-        font-weight: bold;
         text-transform: uppercase;
     }
 
@@ -65,9 +66,9 @@
 
         .sectionCartas{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
-            width: 70%;
+            width: 75%;
         }
 
         .conteudoEncapsulamento{

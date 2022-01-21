@@ -1,0 +1,67 @@
+
+    .menuLateral{
+        background-color: var(--corBackgroundMenuLateral);
+        border-radius: 10px;
+        padding: 1em;
+        position: absolute;
+        height: 912px;
+        width: 300px;
+        top: 10%;
+        right: 2%;
+    }
+
+    .listaMenuLateral{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom:  0.4px solid var(--corBordaMenuLateral);
+    }
+
+    .iconeEditorDeCodigo, .iconeComunidade{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexItensCabecalhoLateral{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em 0 1em;
+    }
+
+    .iconeEditorDeCodigo{
+        padding: 1rem 1.1rem;
+        background-color: var(--backgroundIconeEditorCodigo);
+        border-radius: 10px;
+    }
+
+    .iconeComunidade{
+        padding: 1.3rem 1.1rem;
+        background-color: var(--backgroundIconeComunidade);
+        border-radius: 10px;
+    }
+
+    .tituloMenu{
+        margin-left: 1em;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-family: var(--fontInter);
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--colorFonte);
+        font-weight: bold;
+    }
+
+    .menuAutor{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 2.5em;
+    }
+
+    .imagemAutor{
+        width: 20%;
+        border-radius: 60%;
+    }

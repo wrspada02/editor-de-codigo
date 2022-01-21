@@ -229,8 +229,6 @@
             valorBackgroundEditorCodigo
         }
 
-        console.log(valorBackgroundEditorCodigo);
-
         const dadosNavegadorAtualizado = [...dadosNavegador, dados];
 
         localStorage.setItem('conteudo', JSON.stringify(dadosNavegadorAtualizado));

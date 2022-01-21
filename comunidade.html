@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css comunidade/cabecalhoMobileComunidade.css">
         <link rel="stylesheet" href="css comunidade/base.css">
         <link rel="stylesheet" href="css comunidade/conteudoPrincipal.css">
+        <link rel="stylesheet" href="css comunidade/menuLateral.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -16,12 +17,30 @@
 
     <body>
         <header class="cabecalho container">
+            <div class="menuLateral" data-menuLateral>
+                <ul class="listaMenuLateral">
+                    <li class="flexItensCabecalhoLateral">
+                        <a href="editorCodigo.html"><img src="img/iconeEditorDeCodigo.png" class="iconeEditorDeCodigo" alt="Icone editor de código"></a>
+                        <h2 class="tituloMenu">Editor de código</h2>
+                    </li>
+
+                    <li class="flexItensCabecalhoLateral">
+                        <img src="img/IconeComunidade.png" class="iconeComunidade" alt="Icone comunidade">
+                        <h2 class="tituloMenu">Comunidade</h2>
+                    </li>
+                    </li>
+                </ul>
+                <div class="menuAutor">
+                    <img src="img/williamAutor.PNG" class="imagemAutor" alt="Imagem autor">
+                    <h2 class="tituloMenu">William</h2>
+                </div>
+            </div>
             <ul class="cabecalhoDispositivos">
                 <li class="cabecalhoMobileComunidade">
                     <img src="img/Logo cabecalho.png" alt="Logo cabecalho Alura" class="logoCabecalho">
                     <div class="iconesCabecalhoMobile">
-                        <img src="img/Pesquisa.png" alt="Icone pesquisar" class="iconePesquisar">
-                        <img src="img/Menu.png" alt="Icone menu" class="iconeMenu">
+                        <img src="img/Pesquisa.png" alt="Icone pesquisar" class="iconePesquisar" data-barraPesquisaMobile>
+                        <img src="img/Menu.png" alt="Icone menu" class="iconeMenu" data-menuMobile>
                     </div>
                 </li>
                 <li class="cabecalhoTabletComunidade">
@@ -53,6 +72,7 @@
                     </li>
                 </nav>
             </aside>
+
             <section class="sectionCartas" data-sectionCartas></section>
         </main>
         <script src="scriptComunidade.js" type="module"></script>

@@ -1,4 +1,6 @@
   
+    import { abreMenuMobile } from "./componentes comunidade/abreMenuMobile.js";
+
     const capturaElementosNavegador = () => {
         const packConteudo = JSON.parse(localStorage.getItem(('conteudo')));
         let i = 0;
@@ -45,3 +47,9 @@
     }
     
     capturaElementosNavegador();
+
+    export const botaoMenuMobile = document.querySelector('[data-menuMobile]');
+    botaoMenuMobile.addEventListener('click', abreMenuMobile);
+
+    export const divMenu = document.querySelector('[data-menuLateral]');
+    divMenu.style.display = "none";

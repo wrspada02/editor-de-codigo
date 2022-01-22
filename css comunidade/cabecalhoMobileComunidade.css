@@ -32,6 +32,20 @@
         border-radius: 0.5rem;
     }
 
+    .cabecalhoBarraPesquisa{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalhoBarraPesquisa input{
+        width: 80%;
+        border-radius: 10px;
+        background-color: var(--corBackgroundInput);
+        border: none;
+        height: 50px;
+    }
+
     @media screen and (min-width: 768px) {
         
         .cabecalhoMobileComunidade{

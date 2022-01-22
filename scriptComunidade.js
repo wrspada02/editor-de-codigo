@@ -1,5 +1,8 @@
   
-    import { abreMenuMobile } from "./componentes comunidade/abreMenuMobile.js";
+    import { abreMenu } from "./componentes comunidade/abreMenuMobile.js";
+    import { fechaMenu } from "./componentes comunidade/fechaMenuMobile.js";
+    import { abreBarraPesquisa } from "./componentes comunidade/abreBarraPesquisa.js";
+    import { fechaBarraPesquisa } from "./componentes comunidade/fechaBarraPesquisa.js";
 
     const capturaElementosNavegador = () => {
         const packConteudo = JSON.parse(localStorage.getItem(('conteudo')));
@@ -48,8 +51,32 @@
     
     capturaElementosNavegador();
 
+    let menuLateral;
+
+    const menuLateralOptions = () => {
+        if(menuLateral == undefined || menuLateral == false){ 
+        abreMenu();
+        menuLateral = true;
+        }else{
+        fechaMenu();
+        menuLateral = false;
+        }
+    }
+
     export const botaoMenuMobile = document.querySelector('[data-menuMobile]');
-    botaoMenuMobile.addEventListener('click', abreMenuMobile);
+    botaoMenuMobile.addEventListener('click', menuLateralOptions);
+
+
+    export const menuLateralTablet = document.querySelector('[data-menuLateralTablet]');
+    menuLateralTablet.addEventListener('click', menuLateralOptions);
+
+    export const barraPesquisaMobile = document.querySelector('[data-barraPesquisaMobile]');
+    barraPesquisaMobile.addEventListener('click', abreBarraPesquisa);
+
+    const botaoFecharBarraPesquisa = document.querySelector(['.fecharBarraPesquisa']);
+    botaoFecharBarraPesquisa.addEventListener('click', fechaBarraPesquisa);
 
     export const divMenu = document.querySelector('[data-menuLateral]');
     divMenu.style.display = "none";
+
+    

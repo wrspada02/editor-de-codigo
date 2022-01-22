@@ -1,14 +1,14 @@
-
+    
     import {botaoMenuMobile} from "../scriptComunidade.js";
     import {divMenu} from "../scriptComunidade.js";
     import { menuLateralTablet } from "../scriptComunidade.js";
-    
-    export const abreMenu = () => {
 
-        botaoMenuMobile.src = "img/iconeFechaMenu.png";
-        divMenu.style.display = "initial";
+    export const fechaMenu = () => {
+
+        botaoMenuMobile.src = "img/Menu.png";
+        divMenu.style.display = "none";
 
         /* Tablet */
 
-        menuLateralTablet.src = "img/iconeFechaMenu.png";
+        menuLateralTablet.src = "img/Menu.png"
     }

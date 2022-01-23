@@ -1,37 +1,22 @@
 
-/*     import capturaElementosNavegador from "./scriptComunidade.js";
- */
+    import { aplicaHighlight } from "./componentes editorCodigo/aplicaHighlight.js";
+    import { mudaCor } from "./componentes editorCodigo/mudaCor.js";
+    import { mostraMenuLateral } from "./componentes editorCodigo/mostraMenu.js";
+    import { fechaMenuLateral } from "./componentes editorCodigo/fechaMenu.js";
+    import { mostraBarraDePesquisa } from "./componentes editorCodigo/mostraBarraPesquisa.js";
+    import { fechaBarraDePesquisa } from "./componentes editorCodigo/fechaBarraPesquisa.js";
+    
     /* Adicionando Highligth JS */
-
-    const linguagem = document.querySelector('.selecaoLinguagem');
-    const areaDoCodigo = document.querySelector('.editorDeTextoCaixa');
     const botao = document.querySelector('.botaoHighlight');
-
-    const aplicaHighlight = () => {
-        const codigo = areaDoCodigo.innerText;
-        areaDoCodigo.innerHTML = `<code class="preview hljs ${linguagem.value}" contenteditable="true" aria-label="Editor de código"></code>`;
-        areaDoCodigo.querySelector('code').textContent = codigo;
-        hljs.highlightElement(areaDoCodigo.querySelector('code'));
-    }
-
     botao.addEventListener('click', aplicaHighlight);
 
 
     /* Colocando a cor de fundo do input */
-
-    const mudaCor = () => {
-
-        corDeFundo.style.backgroundColor = corInput.value;
-        
-    }
-    
-    const corDeFundo = document.querySelector('[data-background]');
     const corInput = document.querySelector('[data-color]');
     corInput.addEventListener('change', mudaCor);
 
 
     /* Criando elementos do menu lateral via DOM */
-
     const divMenuLateral = document.createElement('div');
     const divElementoAutor = document.createElement('div');
     const listaElementos = document.createElement('ul');
@@ -91,36 +76,6 @@
     /* Desativando display via DOM */
     divMenuLateral.style.display = "none";
     
-
-    /* Mostrando o menu lateral */
-    const mostraMenuLateral = () => {
-
-    const iconeMenu = document.querySelector('[data-menuMobile]');
-    iconeMenu.src = "img/iconeFechaMenu.png";
-    const menuMobile = document.querySelector(['.divMenuLateralLista']);
-    menuMobile.style.display = "initial";
-
-    /* Tablet */
-    botaoMenuLateralTablet.src = "img/iconeFechaMenu.png";
-
-    }
-
-
-    /* Fechando o menu lateral */
-    const fechaMenuLateral = () => {
-
-        const iconeMenu = document.querySelector('[data-menuMobile]');
-        iconeMenu.src = "img/Menu.png";
-
-        const menuMobile = document.querySelector(['.divMenuLateralLista']);
-        menuMobile.style.display = "none";
-
-        /* Tablet */
-        botaoMenuLateralTablet.src = "img/Menu.png";
-
-    }
-
-
     /* Funcao da logica do menu lateral */
     const menuLateralOptions = () => {
         if(menuLateral == undefined || menuLateral == false){ 
@@ -138,74 +93,20 @@
     const BotaoMenuMobile = document.querySelector('[data-menuMobile]');
     BotaoMenuMobile.addEventListener('click', menuLateralOptions);
 
-
-    /* Funcao de mostrar barra de pesquisa */
-
-     const mostraBarraDePesquisa = () => {
-
-        fechaMenuLateral();
-        
-        const elementoLogo = document.querySelector('[data-elementoLogo]');
-        const elementoPesquisa = document.querySelector('[data-elementoPesquisa]'); 
-        const lupaPesquisar = document.querySelector('[data-lupaPesquisa]');
-        const iconeMenu = document.querySelector('[data-fecharBarraPesquisaMobile]');
-
-        elementoLogo.style.display = "none";
-        iconeMenu.style.display = "none";
-        lupaPesquisar.style.display = "none";
-        barraDePesquisaMobile.style.display = "initial"
-        fecharBarraDePesquisaMobile.style.display = "initial";
-
-        elementoPesquisa.appendChild(barraDePesquisaMobile);
-        elementoPesquisa.appendChild(fecharBarraDePesquisaMobile);
-        elementoPesquisa.classList.add('itensListaMobile');
-        barraDePesquisaMobile.classList.add('barraDePesquisaMobile');
-        barraDePesquisaMobile.classList.add('itensFilhosLista');
-        fecharBarraDePesquisaMobile.classList.add('itensFilhosLista');
-        
-        elementoPesquisa.style.width = "100%";
-        barraDePesquisaMobile.placeholder = "Busque por algo";
-    }
-
-
-    /* Funcao de fechar barra de pesquisa */
-
-    const fechaBarraDePesquisa = () => {
-        
-        const barraDePesquisaMobile = document.querySelector('.barraDePesquisaMobile');
-        const elementoLogo = document.querySelector('[data-elementoLogo]');
-        const lupaPesquisar = document.querySelector('[data-lupaPesquisa]');
-        const iconeMenu = document.querySelector('[data-fecharBarraPesquisaMobile]');
-
-        elementoLogo.style.display = "initial";
-        lupaPesquisar.style.display = "initial";
-        iconeMenu.style.display = "initial";
-        barraDePesquisaMobile.style.display = "none";
-        fecharBarraDePesquisaMobile.style.display = "none";
-    }
-
-
-    /* Criando elementos da barra de pesquisa e estruturando a logica */
-    const barraDePesquisaMobile = document.createElement('input');
-    barraDePesquisaMobile.style.display = "none";
-        
-    const fecharBarraDePesquisaMobile = document.createElement('img');
-    fecharBarraDePesquisaMobile.src = "img/iconeFechaMenu.png";
-    fecharBarraDePesquisaMobile.style.display = "none";
-    fecharBarraDePesquisaMobile.classList.add('fecharBarraPesquisa');
-
-
     /* Abrir barra de pesquisa */
     const lupaPesquisa = document.querySelector('[data-lupaPesquisa]');
     lupaPesquisa.addEventListener('click', mostraBarraDePesquisa);
 
+    export const cabecalhoBarraPesquisa = document.querySelector('[data-cabecalhoBarraPesquisa]');
+    cabecalhoBarraPesquisa.style.display = "none";
 
-    /* Fechar barra de pesquisa */
-    fecharBarraDePesquisaMobile.addEventListener('click', fechaBarraDePesquisa);
+    export const elementoLogo = document.querySelector('[data-elementoLogo]');
+    export const elementosIcones = document.querySelector('[data-elementoPesquisa]');
 
+    const iconeFechaBarraPesquisa = document.querySelector('[data-iconeFechaBarraPesquisa]');
+    iconeFechaBarraPesquisa.addEventListener('click', fechaBarraDePesquisa);
 
     /* Mostrando menu lateral no tablet */
-
     const botaoMenuLateralTablet = document.querySelector('[data-menuTablet]');
     botaoMenuLateralTablet.addEventListener('click', menuLateralOptions);
 

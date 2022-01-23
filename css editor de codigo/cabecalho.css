@@ -6,6 +6,20 @@
         margin-top: 1rem;
     }
 
+    .cabecalhoBarraPesquisa{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;    
+    }
+
+    .cabecalhoBarraPesquisa input{
+        width: 75%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+    }
+
     .itensListaMobile{
         display: flex;
         justify-content: space-around;

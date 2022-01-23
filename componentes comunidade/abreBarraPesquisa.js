@@ -1,4 +1,6 @@
 
+    import { fechaMenu } from "./fechaMenuMobile.js";
+
     const inputBarraPesquisa = document.createElement('input');
     export const imgFecharBarraPesquisa = document.createElement('img');
     const divCabecalho = document.createElement('div');
@@ -16,6 +18,8 @@
 
 
    export const abreBarraPesquisa = () => {
+
+        fechaMenu();
 
         const cabecalhoOriginal = document.querySelector('[data-cabecalho]');
         cabecalhoOriginal.style.display = "none";

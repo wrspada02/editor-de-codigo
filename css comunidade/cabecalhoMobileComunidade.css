@@ -33,6 +33,7 @@
     }
 
     .cabecalhoBarraPesquisa{
+        margin-top: 1.5em;
         display: flex;
         align-items: center;
         justify-content: space-between;
